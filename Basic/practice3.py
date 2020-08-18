@@ -1,4 +1,3 @@
-@@ -0,0 +1,102 @@
 ##
 '''
 deposit successfully. Your balance is $20.
@@ -99,5 +98,83 @@ gender = "male"
 weight = round(std_weight(height / 100, gender), 2)
 print("The standard weight of height {0}cm {1} is {2}kg.".format(height, gender, weight))
 
+##
+print("Python", "Java", sep=", ", end ="? ")
+print("Which one is more fun")  # Python, Java? Which one is more fun
 
-    
+
+import sys
+print("Python", "Java", file=sys.stdout) # Python Java 
+print("Python", "Java", file=sys.stderr) # Python Java
+
+# test score
+'''
+Math 0
+English 50
+Coding 100
+
+Math     :    0
+English  :   50
+Coding   :  100
+'''
+scores = {"Math":0, "English":50, "Coding":100}
+for subject, score in scores.items():
+    # print(subject, score) # English 50 
+    print(subject.ljust(8), str(score).rjust(4), sep= " : ") 
+
+
+## Waiting numbers
+# 001, 002,  003, ...
+'''
+Wating number : 001
+Wating number : 002
+Wating number : 003
+Wating number : 004
+Wating number : 005
+Wating number : 006
+Wating number : 007
+Wating number : 008
+Wating number : 009
+Wating number : 010
+Wating number : 011
+Wating number : 012
+Wating number : 013
+Wating number : 014
+Wating number : 015
+Wating number : 016
+Wating number : 017
+Wating number : 018
+Wating number : 019
+Wating number : 020
+'''
+for num in range(1, 21):
+    print("Wating number : " + str(num).zfill(3))
+
+
+## Input function
+# return string type
+# answer = input("type any value : ")
+# print("Whay you typed is : " + answer + ".")
+
+
+
+# leave empty space empty space, right alignment, total 10 
+print("{0: >10}".format(500))
+# 오른쪽 정렬, 10자리 확보, 부호 붙이기 빈자리는 빈칸으로 채우기 
+print("{0: >+10}".format(500))
+print("{0: >+10}".format(-500))
+# right alignment 10자리 확부, 부호붙이기, 빈자리는 _로 채우기
+print("{0:_<+10}".format(500))
+# 3자리마다 콤마찎기
+print("{0:,}".format(100000000)) # 100,000,000
+# 3자리마다 콤마 찍기, +-부호 붙이기
+print("{0:+,}".format(100000000)) # +100,000,000
+print("{0:+,}".format(-100000000)) # -100,000,000
+# 3자리마다 콤마 찍기, 부호 붙이기, 자릿수 확부
+# 빈자리는 ^ 채우기
+print("{0:^<+30,}".format(-100000000)) # -100,000,000^^^^^^^^^^^^^^^^^^
+# 소수점 출력
+print("{0:f}".format(5/3)) # 1.666667
+# 소수점 특정 자리수 까지만 표시 (소수점 3째 자리에서 반올림)
+print("{0:.2f}".format(5/3)) # 1.67
+

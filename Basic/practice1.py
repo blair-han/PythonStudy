@@ -1,7 +1,5 @@
 '''
-Practice
-Practice
-Practice
+Basic Practice
 '''
 
 # Number
@@ -194,7 +192,7 @@ print('I\'m Blair') # I'm Blair
 # \\ : back slash
 print("C:\\Users\\Desktop\\PythonWorkspace") #C:\Users\Desktop\PythonWorkspace
 
-# \r : move the cursor to the first
+# \r : carrage - return to the beginning of the current line.
 print("Red Apple \rPine") # PineApple 
 
 #\b : back space

@@ -1,4 +1,7 @@
 ## If
+# if the condition is satisfied with the first statement, 
+# it doesn't go further anymore even if secend statement is true.  
+
 weather = "Sunny"
 if weather == "rainny":
     print("Take an umbrella ")
